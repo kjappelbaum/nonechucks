@@ -83,7 +83,7 @@ class SafeDataset(torch.utils.data.Dataset):
             if self._safe_get_item(i) is not None
         )
 
-    @memoize
+    #@memoize
     def __getitem__(self, idx):
         """Behaves like the standard __getitem__ for Dataset when the index
         has been built.
